@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
-</head>
-<body>
-    <script src="app.js" defer></script>
-    <h1>Choose your weapon...</h1>
-    <p>Beat the computer in this five round game.</p>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <div><p id="round-result"></p></div>
-    <div><p id="game-result"></p></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <title>RPS Game</title>
+  </head>
+  <body>
+    <script src="index.js" defer></script>
+    <div class="game-container fade-in-long">
+      <h1 class="title">Rock, Paper, Scissors</h1>
+      <div class="starting-container">
+        <p class="subtitle">Can you beat the computer in this 5 round game?</p>
+        <button class="btn btn-start">Start Game</button>
+      </div>
+      <p class="game-text hidden">Choose your weapon...</p>
+      <div class="card-container hidden">
+        <div class="card hidden" id="rock"></div>
+        <div class="card hidden" id="paper"></div>
+        <div class="card hidden" id="scissors"></div>
+      </div>
+      <div class="score-container">
+        <p class="round-result"></p>
+        <p class="game-result"></p>
+        <button
+          class="btn btn-reset hidden"
+          onClick="window.location.reload();"
+        >
+          Play Again
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

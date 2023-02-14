@@ -26,6 +26,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 body,
@@ -82,6 +83,22 @@ body,
 }
 .game-container #scissors {
   background: url("../assets/scissors.png");
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 30px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: calc(100vh - 50px);
+  color: hsl(0deg, 0%, 37%);
+  font-size: 0.9rem;
+}
+footer i {
+  color: hsl(0deg, 0%, 37%);
 }
 
 /* DISPLAY & ANIMATION */

@@ -14,27 +14,28 @@
   </head>
   <body>
     <script src="index.js" defer></script>
-    <div class="game-container fade-in-long">
+    <div class="game-container fade-in">
       <h1 class="title">Rock, Paper, Scissors</h1>
       <div class="starting-container">
         <p class="subtitle">Can you beat the computer in this 5 round game?</p>
         <button class="btn btn-start">Start Game</button>
       </div>
-      <p class="game-text hidden">Choose your weapon...</p>
-      <div class="card-container hidden">
-        <div class="card hidden" id="rock"></div>
-        <div class="card hidden" id="paper"></div>
-        <div class="card hidden" id="scissors"></div>
-      </div>
-      <div class="score-container">
-        <p class="round-result"></p>
-        <p class="game-result"></p>
+      <div class="info-container">
+        <p class="game-text hidden">Choose your weapon...</p>
         <button
           class="btn btn-reset hidden"
           onClick="window.location.reload();"
         >
           Play Again
         </button>
+      </div>
+      <div class="card-container hidden">
+        <div class="card hidden" id="rock"></div>
+        <div class="card hidden" id="paper"></div>
+        <div class="card hidden" id="scissors"></div>
+      </div>
+      <div class="score-container hidden">
+        <p class="round-result"></p>
       </div>
     </div>
     <footer>

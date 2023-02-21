@@ -12,10 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-  background: url("../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -25,7 +21,11 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  background: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
   position: relative;
 }
 
@@ -129,11 +129,11 @@ footer {
   padding-bottom: 20px;
   position: absolute;
   top: calc(100vh - 50px);
-  color: hsl(0deg, 0%, 37%);
+  color: hsl(0deg, 0%, 20%);
   font-size: 0.9rem;
 }
 footer i {
-  color: hsl(0deg, 0%, 37%);
+  color: hsl(0deg, 0%, 20%);
 }
 
 /* DISPLAY & ANIMATION */
